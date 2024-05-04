@@ -1,0 +1,756 @@
+body{
+    margin: 0;
+    background-color: #DDDDDD ;
+}
+.image{
+    float: left;
+    height: 100px;
+
+}
+
+ .navi{
+     height: 100px;
+     width: 100%;
+    background-color: white;
+    text-align: center;
+    user-select: none;
+    /*
+    position: fixed;
+    top: 0;
+    z-index: 3;*/
+}
+
+.navi ul{
+    line-height: 100px;
+    display: inline;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #006192;
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+
+.navi ul li{
+    margin-left: 30px;
+    display: inline;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    color: #006192;
+    padding: 35px 8px 36px 8px;
+}
+
+.intro{
+    background-image: url(fg.jpg);
+      padding-right: 100%;
+      padding-bottom:35% ;
+      text-align: center;
+      white-space: nowrap;
+      border-radius:0% 50%;
+
+}
+
+.intro span{
+    position: relative;
+    top: 164px;
+    left: 480px;
+    font-size: 38px;
+    color: #1B2237;
+    font-family: 'Piazzolla', serif;
+    user-select: none;
+}
+
+
+/*------form flight style------*/
+
+.the_container{
+background-color: #1B2237;
+padding: 40px;
+}
+
+.door_container{
+    text-align: right;
+
+    user-select: none;
+
+    width: 83.7%;
+    margin: 7px auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-family: 'Jura', sans-serif;
+}
+
+.door1, .door2, .door3{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #006192;
+    border-bottom: 0;
+    cursor: pointer;
+    color: #006192;
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+}
+
+.door1{
+    background-color: #2C0FF2;
+    color: white;
+}
+
+.arrow1, .arrow2, .arrow3{
+
+    width: 0;
+    /*background-color: gold;*/
+
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #2C0FF2;
+    border-bottom-color: transparent;
+
+    border-style: solid;
+
+    border-width: 10px;
+}
+
+.form_box{
+
+    width: 89%;
+    margin: 50px auto;
+    margin-top: 7px;
+    border-radius: 0 25px 25px 25px;
+    font-family: 'Jura', sans-serif;
+    user-select: none;
+}
+
+
+.tab1{
+    display: inline-block;
+
+    background-color: #F2F2F2;
+    color: #006192;
+    padding: 5px 15px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.tab2, .tab3{
+
+    display: inline-block;
+
+    background-color: #006192;
+    color: white;
+    padding: 5px 15px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.f1{
+    padding: 60px;
+    background-color: #F2F2F2;
+    border-radius: 0 25px 25px 25px;
+}
+
+
+
+
+.label_f1, .label_f2, .label_f3{
+    font-size: 25px;
+    color: #006192;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.radio_container1{
+    
+    margin-bottom: 15px;
+
+}
+
+.radio_container1 div input[type = "radio"]{
+
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+
+}
+/*
+.radio_container1 div:nth-of-type(1) input[type = "radio"]{
+
+    margin-left: 0;
+}*/
+
+input[type = "radio"]:nth-of-type(1){
+    margin-left: 0;
+}
+
+.radio_container1 div:nth-of-type(1) label, .radio_container1 div:nth-of-type(2) label, .radio_container1 div:nth-of-type(3) label{
+    float: left;
+}
+
+
+/*-----end flight form------*/
+
+.f2{
+    background-color: #F2F2F2;
+
+    display: none;
+    border-radius: 0 25px 25px 25px;
+    font-family: 'Jura', sans-serif;
+    padding: 60px;
+}
+
+
+
+
+/*---end hotel form---*/
+
+
+.f3{
+    background-color: #F2F2F2;
+    padding: 60px;
+    display: none;
+    
+    border-radius: 0 25px 25px 25px;
+    font-family: 'Jura', sans-serif;
+}
+
+
+/*----end-----*/
+
+.marg_con{
+    display: none;
+    width: 89%;
+    margin: 50px auto;
+    margin-top: 35px;
+
+}
+
+.pad_con{
+    padding: 60px;
+    border-radius: 25px;
+    font-family: 'Jura', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.your{
+    display: none;
+    width: 89%;
+    margin: 50px auto;
+    margin-top: 35px;
+
+}
+
+.Want{
+
+    padding: 60px;
+    border-radius: 25px;
+    font-family: 'Jura', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.Want h2{
+    color: #006192;
+}
+
+.surname, .reservation_code, .metoo{
+    padding: 7px;
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+
+.finish{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    color: #006192;
+    font-family: 'Raleway', sans-serif;
+}
+
+.end{
+
+    margin: 0 auto 50px auto;
+}
+
+
+.be{
+    padding: 7px 30px;
+    font-size: 21px;
+    background-color: #006192;
+    color: white;
+    border: 1px solid #006192;
+    border-radius: 3px;
+    font-family: 'Jura', sans-serif;
+    margin-top: 50px;
+
+    float: left;
+}
+
+.be:hover{
+    background-color: #00aaff;
+}
+
+.be:active{
+    background-color: #F2F2F2;
+    color: #006192;
+}
+
+
+.communi{
+    display: inline-block; 
+    text-align: center; 
+    padding-left: 0px; 
+}
+
+.communi img{
+    width: 35px;
+    height: 35px;
+
+}
+
+.copyright{
+    margin-top: 14px; 
+    border-top: 1px solid #d2d7d3; 
+    padding-top: 4px; 
+    padding-bottom: 21px; 
+    text-align: left;
+}
+
+.copyright span{
+    color: white;
+}
+
+.logo{
+    display: inline-block; 
+    position: relative; 
+    bottom: 51px; 
+    left: 83px;
+}
+
+.logo img{
+    border-radius:  0 50%; 
+    width: 200px;
+}
+
+.txt li{
+    width: 200px;
+    height: 29px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+    
+    }
+    
+/*   navi ul a   */
+
+.navi ul a:hover{
+
+    background-color: #006192;
+    color: white;
+}
+
+/* ----------- page 2 -------------- */
+
+table{
+    border-collapse: collapse;
+    font-family: 'Jura', sans-serif;
+    margin: 0px auto;
+}
+
+
+td{
+    border: 1px solid rgb(150, 150, 150);
+    padding: 15px;
+    width: 331px;
+
+}
+
+td h2{
+    text-align: left;
+}
+
+td p{
+    width: 300px;
+    text-align: left;
+}
+
+tr:nth-of-type(1) td:nth-of-type(1){
+    border-top: 0;
+    border-left: 0;
+}
+
+tr:nth-of-type(1) td:nth-of-type(2){
+    border-top: 0;
+}
+
+tr:nth-of-type(1) td:nth-of-type(3){
+    border-top: 0;
+    border-right: 0;
+}
+
+tr:nth-of-type(2) td:nth-of-type(1){
+    border-bottom: 0;
+    border-left: 0;
+}
+
+tr:nth-of-type(2) td:nth-of-type(2){
+    border-bottom: 0;
+}
+
+tr:nth-of-type(2) td:nth-of-type(3){
+    border-bottom: 0;
+    border-right: 0;
+}
+
+/* ****************************************************************** */
+
+.first_con{
+    display: inline-block;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    position: relative;
+}
+
+.first_con span:first-child{
+    position: absolute;
+    /*
+    font-size: 11px;
+    left: 17px;
+    top: 5px;
+    */
+    font-size: 16px;
+    top: 17px;
+    left: 17px;
+    color: rgb(136, 136, 136);
+}
+
+.first_name{
+    border: 0;
+    width: 254px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+#first_w{
+    position: absolute;
+    top: 46px;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+}
+
+
+input[type = "text"]:focus {
+    outline:0;
+}
+
+/*
+input[type = "date"]{
+    background-color: #006192;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 177.5px;
+    font-size: 22px;
+}*/
+
+.date_con{
+    display: inline-block;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    position: relative;
+}
+
+.date_con span:nth-of-type(1){
+    position: absolute;
+    /*
+    font-size: 11px;
+    left: 17px;
+    top: 5px;
+    */
+    font-size: 16px;
+    top: 17px;
+    left: 17px;
+    color: rgb(136, 136, 136);
+    background-color: white;
+    padding: 3px;
+}
+
+.date_name{
+    border: 0;
+    width: 254px;
+    font-size: 15px;
+    padding: 15px 2px 5px 2px;
+}
+
+#date_w{
+    position: absolute;
+    top: 53px;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+}
+
+
+input[type = "date"]:focus {
+    outline:0;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.number_con{
+    display: inline-block;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    position: relative;
+}
+
+.number_con span:nth-of-type(1){
+    position: absolute;
+    /*
+    font-size: 11px;
+    left: 17px;
+    top: 5px;
+    */
+    font-size: 16px;
+    top: 17px;
+    left: 17px;
+    color: rgb(136, 136, 136);
+    background-color: white;
+    padding: 3px;
+}
+
+.number_name{
+    border: 0;
+    width: 254px;
+    font-size: 15px;
+    padding: 15px 2px 5px 2px;
+}
+
+#number_w{
+    position: absolute;
+    top: 48px;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+}
+
+input[type = "number"]:focus {
+    outline:0;
+}
+
+.be2{
+    padding: 7px 30px;
+    font-size: 20px;
+    background-color: #006192;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #006192;
+    border-radius: 3px;
+    font-family: 'Jura', sans-serif;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+/* multi  */
+
+.identifire{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 11px 15px 9px 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    background-color: #006192;
+    color: white;
+    font-size: 21px;
+    width: 14.078px;
+    text-align: center;
+    position: relative;
+    bottom: 0.8px;
+}
+
+/*****/
+
+.out{
+    display: inline-block;
+    position: relative;
+
+}
+
+.trip1_con{
+    display: inline-block;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    position: relative;
+    bottom: 3.6px;
+}
+
+.trip1_con span:first-child{
+    position: absolute;
+    /*
+    font-size: 11px;
+    left: 17px;
+    top: 5px;
+    */
+    font-size: 16px;
+    top: 14px;
+    left: 17px;
+    color: rgb(136, 136, 136);
+    background-color: white;
+    padding: 3px;
+}
+
+.trip_date{
+    border: 0;
+    width: 254px;
+    font-size: 15px;
+    padding: 8px 2px 5px 2px;
+}
+
+#trip_date_w{
+    width: max-content;
+    position: absolute;
+    top: 46px;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+}
+
+.be3{
+    padding: 3px 4px;
+    font-size: 20px;
+    color: #1B2237;
+    border-bottom: 2px dotted #006192;
+    font-family: 'Jura', sans-serif;
+    position: absolute;
+    top: 55px;
+    right: -1px;
+
+}
+
+.be3:hover{
+    background-color: red;
+    color: white;
+    border-bottom: 2px dotted white;
+    border-top: 2px dotted white;
+}
+
+.be3:active{
+    background-color: #F2F2F2;
+    color: red;
+    border: 1px solid red;
+}
+
+.travel{
+    margin-top: 70px;
+}
+
+.dont{
+    display: none;
+}
+
+.black_back{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.popup_page{
+    background-color: #1B2237;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    border-radius: 5px;
+    padding: 25px 50px;
+}
+
+.login{
+    width: max-content;
+    margin: 1px auto;
+}
+
+.in{
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.lobol{
+    display: block; 
+    color: white; 
+    font-size: 20px; 
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.Sign-in{
+    color: white;
+    background-color: #006192;
+    min-width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 100px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.Sign-in:hover{
+    background-color: #0087ca;
+}
+
+.Sign-in:active{
+
+    background-color: #1B2237;
+    border: 1.5px solid #00aaff;
+    color: #00aaff;
+    padding: 8.5px 18.5px;
+}
+
+.close{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    border-radius: 100%;
+    right: -9px;
+    top: -9px;
+    height: 24px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.close:active{
+    background-color: rgb(160, 160, 160);
+}
+

@@ -1,0 +1,276 @@
+html{
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.navi{
+    position: fixed; 
+    top:0; 
+    z-index: 10;
+    background-color: #006192;
+    width: 100%;
+    height: 60px;
+}
+
+.navi>div:nth-child(1){
+    font-size: 18px; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 600;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(1) img{
+    height: 60px; 
+    position: absolute; 
+    cursor: pointer;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(2) img{
+
+color: white; 
+position: absolute; 
+top:0px; 
+left: 450px; 
+background-color: #006192; 
+height: 60px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(3){
+    padding: 19.5px; 
+    width: 102px; 
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 480px; 
+    min-width: max-content;
+
+}
+
+.navi>div:nth-child(1) div:nth-of-type(4){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 621px; 
+    background-color: #006192; 
+    height: 60px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(5){
+    padding: 19.5px; 
+    min-width: max-content;
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 651px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(6){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 834px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(7){
+    padding: 19.5px; 
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 864px;
+    min-width: max-content;
+    background-color: #ad0006;
+
+}
+
+.navi>div:nth-child(1) div:nth-of-type(8){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 975px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(3), .navi>div:nth-child(1) div:nth-of-type(5){
+    cursor: pointer;
+}
+
+.stuffing{
+    height: 60px; 
+    width: 100%;
+}
+
+.body{
+    margin: 40px 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-bottom: 0;
+    border: 2px solid rgb(112, 112, 112);
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: #00009921;
+    font-family: 'Roboto', sans-serif;
+}
+
+.first_line{
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards{
+    display: inline-flex;
+    align-items: center;
+}
+
+.cards img{
+    margin-right: 7px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main{
+    display: flex;
+
+    justify-content: center;
+
+    text-align: left;
+}
+
+.first_line h2{
+    font-size: 26px;
+}
+
+h2{
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+.part1, .part2{
+    display: inline-block;
+}
+
+.part1{
+    width: 50%;
+    float: left;
+    min-height: 359px;
+    padding-top: 15px;
+    border-right: 1.5px solid rgb(112, 112, 112);
+    border-top: 1.5px solid rgb(112, 112, 112);
+    flex-grow: 1;
+
+}
+
+.testo{
+    width: 50%;
+    border-top: 1.5px solid rgb(112, 112, 112);
+}
+
+.part2{
+    min-width: 396px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-top: 15px;
+
+}
+
+.Expiry{
+    margin-right: 16%;
+    width: 100px;
+    min-height: 17px;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.Expiry1{
+
+    min-height: 17px;
+    padding: 7px 15px;
+    border-radius: 5px;
+
+    margin-right: 16%; 
+    max-width: 60px;
+}
+
+.label{
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+input[type = "text"]{
+    padding: 8px 15px;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+select{
+    border-width: 0px;
+}
+
+.region{
+    box-sizing: content-box;
+    width: 169px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.submit{
+    border-radius:  0 0  10px 10px;
+    border: 2px solid rgb(112, 112, 112);
+    background-color: rgb(168, 168, 168);
+    text-align: center;
+    padding: 7px 20px;
+
+    margin: 0 auto;
+
+    margin: 40px 30px;
+    margin-top: 0px;
+
+    margin-bottom: 10px;
+    
+    border: 2px solid rgb(112, 112, 112);
+
+    text-align: center;
+}
+
+.button{
+    color: white;
+    font-size: 19px;
+    padding: 8px 25px;
+    background-color: #006192;
+    border-radius: 10px;
+    border: 1px solid #006192;
+    
+}
+
+.button:hover{
+    background-color: #004161;
+}
+
+.button:active{
+    background-color: rgb(255, 255, 255);
+    color: #006192;
+}
+
+#first_w{
+    position: relative;
+    left: 5px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+}

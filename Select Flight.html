@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Airline - Select Flight</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="Select Flight.css">
+   
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Langar&family=Piazzolla:wght@200;400&display=swap" rel="stylesheet">   
+      <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+      
+   </head>
+   <body>
+
+      <div class="navi">
+        <div>
+            <div id="do0"> <img src="vb.png" alt=""> </div>
+            <div><img src="arrow5.png" alt=""></div>
+            <div>Select Flight <?php echo "holla" ?></div>
+            <div><img src="arrow4.png" alt=""></div>
+            <div>Passenger Details</div>
+            <div><img src="arrow2.png" alt=""></div>
+            <div>Payment</div>
+            <div><img src="arrow2.png" alt=""></div>
+
+        </div> 
+
+      </div>
+
+       <div class="stuffing"> abc </div>
+
+       <div class="body">
+
+            <span class="bound" id="bound">OUTBOUND TRIP</span>
+             <br> 
+            <div class="big_label">*city to *city on *date</div>
+
+         </div>
+
+
+            <div id="copy_card" class="copy_card">
+
+               <div class="flight_details_c" id="flight_details_c">
+
+                  <span style="background-color: green; display: inline-flex; border-radius: 100%; position: relative; right: 27px; align-items: center; padding: 5px;">
+                     <img src="check_white.png" alt="">
+                     </span>
+
+                  <div class="info1">
+                     <div class="div1">arrival_time </div> 
+                     <div class="div2">city_sambol </div> 
+                     <div class="div3">city_name</div> 
+                  </div> 
+
+                  <div class="info2"> <img src="bin1.png" alt="">  
+                     <div class="text1"> Duration</div>  
+                     <div class="text2">'num'stop(s)</div> 
+                  </div>
+
+                  <div class="info3">
+                     <div class="div1">departure_time</div>  
+                     <div class="div2">destination_sambol</div>  
+                     <div class="div3">distination_name</div>
+                  </div>
+          
+                  <div style="margin: 0 20px 0 20px;">
+                     <div class="div0">Flight Duration</div>  
+                     <div class="div4">24h 45m</div>
+                  </div>
+
+                  <div class="divadd">
+                     <span class="spanadd" id="spanadd"></span>
+                  </div>
+
+                  <div style="text-align: center; margin-right: 5px; padding: 5px 0 5px 20px; border-left: 2px solid #ddd; display: flex; align-items: center;">
+                     
+                        <span class="diffirent">Itinerary details</span>  
+                        <img id="DA_c" src="arrow_svg.png" alt="">
+                     
+                  </div>
+                  
+                  
+
+
+               </div>
+
+
+
+            </div>
+<!-- ************** table **************-->
+            <div class="Details" id="D_c">
+
+               <table >
+                  
+                     <thead >
+                  <tr >
+                  <th>Flight</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Duration</th>
+               </tr>
+                     </thead>
+                     <tbody>
+               <tr>
+                  <td>
+                     <div class="air_logo" id="logo"><img src="turk.png" alt=""> </div>
+                     <div>Airline name <br> type of plan</div>
+                  </td>
+                  <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                  <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                  <td>duration *h **m</td>
+
+               </tr>
+
+               <tr>
+                  <td>
+                     <div class="air_logo" id="logo"><img src="jordan.png" alt=""> </div>
+                     <div>Airline name <br> type of plan</div>
+                  </td>
+                  <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                  <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                  <td>duration *h **m </td>
+
+               </tr>
+
+               </tbody>
+               </table>
+
+              </div>
+
+<!--*************    </table>    ****************-->
+
+   <button class="change_f" id="change_f">Change Flight</button>
+
+<div class="parent" id="parent">
+
+      <aside class="continue" id="continue">
+      <aside class="price">894.15 JOD</aside>
+
+     <span> Total trip price: </span>
+     <div style="font-size: 15px; padding-top: 5px; color:#697886;">(1 Adult)</div>
+
+     <div style="text-align: center;">
+        <button class="con_but" id="con_but">Continue</button>
+     </div>
+
+   </aside>
+
+
+   <div class="trip_details">
+      
+      <h2 style="text-align: center; font-family: 'Open Sans', sans-serif;">Your trip review</h2>
+
+      <div class="part1">
+         <div class="content1">
+
+            <aside class="side1">
+               <div style="font-size: 20px; font-weight: bold;">894.65 JOD</div>
+               <span class="sprat">Economy</span> <br>
+               Checked baggage allowance: <br>
+               Adult: 2 piece(s), up to 23kg each
+            </aside>
+   
+
+         <div class="big_label2">*city to *city on *date</div>
+
+
+
+             <div class="container">
+            
+               <div class="coco">
+               <div class="ball"></div>
+               <span>Departure</span>
+               </div>
+               <div class="time">2h 50m</div>
+               
+               <div class="coordinates_D">
+                  Fri, 16 Jul 2021 - 20:30 AMM <br>
+                  Amman, Queen Alia International Airport <br>
+                  Jordan
+               </div>
+               
+               <div class="coco">
+                  <div class="ball"></div>
+                  <span>Arrival</span>
+                  </div>
+
+               <div class="coordinates_A">
+                  Fri, 16 Jul 2021 - 20:30 AMM <br>
+                  Amman, Queen Alia International Airport <br>
+                  Jordan
+               </div>
+
+               <div class="coordinates_G">
+                  Oberated By: qatar airline <br>
+                  Boeing 777-3R
+               </div>
+   
+   
+               </div>
+             
+         </div>
+         
+
+      </div>
+      <div class="line1">
+         <span class="txt_l">Connection time: 2h 0m</span>
+         <div class="line"></div>
+      </div>
+
+      <!--  --------*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*------  -->
+
+      <div class="part1">
+         <div class="content1">
+
+            <aside class="side1">
+                <br>
+               <span class="sprat">Economy</span> <br>
+               Checked baggage allowance: <br>
+               Adult: 2 piece(s), up to 23kg each
+            </aside>
+
+            <div class="container">
+            
+               <div class="coco">
+               <div class="ball"></div>
+               <span>Departure</span>
+               </div>
+               <div class="time2">2h 50m</div>
+               
+               <div class="coordinates_D">
+                  Fri, 16 Jul 2021 - 20:30 AMM <br>
+                  Amman, Queen Alia International Airport <br>
+                  Jordan
+               </div>
+               
+               <div class="coco">
+                  <div class="ball"></div>
+                  <span>Arrival</span>
+                  </div>
+
+               <div class="coordinates_A">
+                  Fri, 16 Jul 2021 - 20:30 AMM <br>
+                  Amman, Queen Alia International Airport <br>
+                  Jordan
+               </div>
+
+               <div class="coordinates_G">
+                  Oberated By: qatar airline <br>
+                  Boeing 777-3R
+               </div>
+   
+   
+               </div>
+
+         </div>
+
+      </div>
+
+      <div class="line1">
+         <span class="txt_l">Total duration: 19h 15m</span>
+         <div class="line"></div>
+      </div>
+
+
+   </div>
+
+   
+
+</div>
+
+<!--*************    </copy>    ****************-->
+            
+            <div class="main" id="main">
+              <div class="filter_bar">
+                 <div class="filter">Edite Filter</div>
+              </div>
+              <div class="flight_list" >
+                            
+                 <div class="card_standard" id="standard">
+                  <div class="flight_details" id="flight_details">
+                     <div class="info1">
+                        <div class="div1" id="arrival_time">arrival_time </div> 
+                        <div class="div2">city_sambol </div> 
+                        <div class="div3">city_name</div> 
+                     </div> 
+
+                     <div class="info2"> <img src="bin1.png" alt="">  <div class="text1"> Duration</div>  <div class="text2">'num'stop(s)</div> </div>
+
+                     <div class="info3">
+                        <div class="div1">departure_time</div>  <div class="div2">destination_sambol</div>  <div class="div3">distination_name</div>
+                     </div>
+             
+                     <div style="margin: 0 10px 0 10px;">
+                        <div class="div0">Flight Duration</div>  <div class="div4">24h 45m</div>
+                     </div>
+
+                     <div style="text-align: center; margin: 0 5px 0 5px; padding: 5px 0 5px 5px; border-left: 1px solid #ddd;">
+                        <div class="div5">Itinerary details</div>  <img id="DA" src="arrow_svg.png" alt="">
+                     </div>
+                     
+                     
+
+
+                  </div>
+
+
+                  <div>
+                        <div class="economy" id="economy">
+                           <span style="font-size: 14px; margin-right: 0px; color: cornflowerblue;">
+
+                              Economy
+                        </span>
+
+                           <span style="display: inline-block;">
+                              
+                                 <span style="display: block; font-size: 11px;">Per Passenger</span>
+                                 <span style="position: relative;">
+                                 <span style="line-height: 15px; font-size: 17px;">USD 1.165</span>
+                                 <span style="font-size:13px; position: absolute; top: 0;">.45</span>
+                              
+                              </span>
+                           
+                        </div>
+                  </div>
+                  <div>
+                     <div class="business" id="business">
+                        <span style="font-size: 14px; margin-right: 0px; color: goldenrod;">
+
+                           Business
+                     </span>
+
+                        <span style="display: inline-block;">
+                           <span style="display: block; font-size: 11px;">Per Passenger</span>
+                           <span style="position: relative;">
+                           <span style="line-height: 15px; font-size: 17px;">USD 1.165</span>
+                           <span style="font-size:13px; position: absolute; top: 0;">.45</span>
+                           </span>
+                        </span>
+                     </div>
+                  
+               </div>
+
+                 </div>
+
+                 <div class="Details" id="D">
+
+                  <table >
+                     
+                        <thead >
+                     <tr >
+                     <th>Flight</th>
+                     <th>From</th>
+                     <th>To</th>
+                     <th>Duration</th>
+                  </tr>
+                        </thead>
+                        <tbody>
+                  <tr>
+                     <td>
+                        <div class="air_logo" id="logo"><img src="turk.png" alt=""> </div>
+                        <div>Airline name <br> type of plan</div>
+                     </td>
+                     <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                     <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                     <td>duration *h **m</td>
+
+                  </tr>
+
+                  <tr>
+                     <td>
+                        <div class="air_logo" id="logo"><img src="jordan.png" alt=""> </div>
+                        <div>Airline name <br> type of plan</div>
+                     </td>
+                     <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                     <td>time <br> date <br> distination_name & symbol <br> airline</td>
+                     <td>duration *h **m </td>
+
+                  </tr>
+
+                  </tbody>
+                  </table>
+
+                 </div>
+
+
+               
+              </div> 
+            </div>
+      
+<script src="Select_Flight.js"></script>
+  </body>
+</html>

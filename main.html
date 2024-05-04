@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <title>Airline</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="main.css">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Langar&family=Piazzolla:wght@200;400&display=swap" rel="stylesheet">   
+
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+
+      <div class="black_back" id="black_back">
+
+         <div class="popup_page">
+
+            <form action="" class="login">
+
+               <div class="close" id="close">
+                   <img src="close.png" alt="">
+               </div>
+
+               <div style="margin-bottom: 30px;">
+                  <label class="lobol" for="Email">Email address</label>
+                  <input  id="Email" class="in" type="text" name="Email address" placeholder="Email address">
+               </div>
+               <div style="margin-bottom: 30px;">
+                  <label class="lobol" for="Password">Password</label>
+                  <input id="Password" class="in" type="password" name="Password" placeholder="Password">
+               </div>
+               <div>
+                  <div class="Sign-in">Sign-in</div>
+               </div>
+            </form>
+
+         </div>
+
+      </div>
+
+      <div class="navi">
+          <img class="image" src="vb.png" alt="">
+      <div>
+          <ul>
+              <li><a href="#tablo"> Discover</a></li>
+              <li><a href="#door1">Book</a href=""></li>
+              <li><a href="#midlo">Journey</a></li>
+              <li><a href="">Privilege Club</a></li>
+
+          </ul>
+          <div style="display: inline-block; margin-left: 40px;">
+             <span id="login" style="text-decoration: none; color: #006192; cursor: pointer;">
+             <img src="images.png" style="position: relative; top: 15px; height: 50px; width: 50px;">
+             <span>login</span> 
+             </span>
+
+
+             <a href="sign up.html" style="text-decoration: none; color: #006192; margin-left: 4px; padding-left: 6px; border-left: 1.5px solid black;">Sign up</a>
+          </div>
+
+             
+         </div>
+      </div>
+      
+      <div class="intro">
+        <span> Start your journey here</span>
+      </div>
+
+      <div class="door_container">
+
+         <div class="door1" id="door1">Booking <div class="arrow1" id="arrow1"></div></div>
+         <div class="door2" id="door2">Check-in / Manage booking <div class="arrow2" id="arrow2"></div></div>
+         <div class="door3" id="door3">Flight status <div class="arrow3" id="arrow3"></div></div>
+
+      </div>
+
+       <div class="the_container">
+
+
+
+      <div class="form_box" id="form_box">
+
+         <div class="tab_container">
+            <div class="tab1" id="tab1">Flight</div>
+            <div class="tab2" id="tab2">Hotel</div>
+            <div class="tab3" id="tab3">Car</div>
+         </div>
+
+          <form action="mainphp.php" method="GET" class="f1" id="f1" >
+             <label class="label_f1" id="label_f1">Flight:</label>
+
+             <div class="radio_container1">
+               <div>
+                  <input type="radio" name="trip_path" id="return" value="round trip" checked>
+                  <label for="return" id="radio_label1">round trip</label>
+               </div>
+
+                <div>
+                   <input type="radio" name="trip_path" id="one_way" value="one way">
+                   <label for="one_way" id="radio_label2">one way</label>
+                </div>
+
+                <div>
+                   <input type="radio" name="trip_path" id="multi-city" value="multi-city">
+                   <label for="multi-city" id="radio_label3">multi-city</label>
+                </div>
+
+                <div style="clear: left;"></div>
+             </div>
+
+             <div style="margin-bottom: 25px;">
+               <div class="first_travel" id="first_travel">
+
+               <div class="first_con" id="first_con">
+
+                  <span id="first">From</span>
+
+                  <input type="text" class="first_name" id="first_name" name="current_city" required>
+                  <span id="first_w"><img  src="warning2.png" alt="">&nbsp;Please enter a current city</span>
+               </div>
+
+               <div class="first_con" id="first_con">
+
+                  <span id="first">To</span>
+
+                  <input type="text" class="first_name" id="first_name" name="destination" required>
+                  <span id="first_w"><img  src="warning2.png" alt="">&nbsp;Please enter a destination</span>
+               </div>
+
+               </div>
+
+               <div style="margin-top: 66px;" id="second">
+
+                  <!-- ************************************************* -->
+                  
+
+                  <div class="added" id="added">
+                     
+                  </div>
+
+                  <span class="be" style="display: block; width: max-content;" id="butt">Add Flight</span>
+
+                  <div style="clear: both;"></div>
+
+               </div>
+            </div>
+
+            <div style="margin-bottom: 25px;" id="the_date">
+               <div class="date_con" id="date_con">
+                  <span id="placehold">Chosen departure date</span>
+                  <input type="date" class="date_name" id="date_name" name="date_arriv" required>
+                  <span id="date_w"><img  src="warning2.png" alt="">&nbsp;Please enter a departure date</span>
+               </div>
+
+               <div class="date_con" id="date_con">
+                  <span id="placehold">Chosen return date</span>
+                  <input type="date" class="date_name" id="date_name" name="date_return">
+                  <span id="date_w"><img  src="warning2.png" alt="">&nbsp;Please enter a return date</span>
+               </div>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+               <div class="number_con" id="number_con">
+                  <span id="num">Chosen Adult number</span>
+                  <input type="number" class="number_name" id="number_name" name="number_adult" min="1" required>
+                  <span id="number_w"><img  src="warning2.png" alt="">&nbsp;Please enter a Adult number</span>
+               </div>
+
+               <div class="number_con" id="number_con">
+                  <span id="num">Chosen Child number</span>
+                  <input type="number" class="number_name" id="number_name" name="number_child" min="0" required>
+                  <span id="number_w"><img  src="warning2.png" alt="">&nbsp;Please enter a Child number</span>
+               </div>
+            </div>
+
+            <input type="submit" value="Search Flight" class="be2">
+          </form>
+           
+
+          <form action="result.html" method="GET" class="f2" id="f2">
+            <label class="label_f2">Hotel:</label> 
+ 
+          </form>
+
+
+          <form class="f3" action="result.html" method="GET" class="f3" id="f3">
+            <label class="label_f3">Car:</label> 
+
+
+
+          </form>
+
+  
+
+      </div>
+
+      <div class="your" id="your">
+         <div class="Want" id="Want">
+
+            <h2 style="font-size: 30px; margin-top: 0px;">Want to manage your booking?</h2>
+            <div style="display: flex;">
+               <input type="text" class="reservation_code" name="reservation_code" placeholder="Ticket number or reservation code (PNR)">
+               <input type="text" class="surname" style="margin-left: 5px;" name="surname" placeholder="Last name">
+               <span class="be2" style="margin-left: 5px;">Check-in</span>
+            </div>
+
+        </div>
+     </div>
+
+
+     <div class="marg_con" id="marg_con">
+        <div class="pad_con">
+
+         <h2 style="font-size: 30px; margin-top: 0px; color: #006192;">Flight Status</h2>
+         <div style="display: flex;">
+            <input type="text" class="metoo" name="Flight number" placeholder="Enter Flight number">
+            <input type="date" class="metoo" style="margin-left: 5px;" name="flight date" placeholder="Date">
+            <span class="be2" style="margin-left: 5px;">Search flights</span>
+         </div>
+
+        </div>
+     </div>
+
+
+   </div>
+
+   <div style="text-align: center; margin: 0px auto; border-bottom: 1px solid rgb(150, 150, 150);">
+      <table id="tablo">
+
+         <tr>
+            <td>
+               <img src="africa.png" alt="">
+               <h2>Flights to Africa</h2>
+               <p>
+                  Immerse yourself in nature! Africa is unsurpassed in its wildlife and its ancient traditions. Countries such as South Africa, Mauritius, and Kenya offer exhilarating adventures by day and night. From safaris to shopping and exotic cuisine to irresistible music, Africa is an experience like no other. In Morocco, Algiers, and Tunisia, explore bustling historic souks, serenely spiritual mosques and colorful streets…You’ll discover a totally different side of Africa!
+               </p>
+            </td>
+
+            <td>
+               <h2>Flights to the Americas</h2>
+               <p>
+                  Catch the beat of Brazil, step back in time in Cuba, sample amazing cuisine in Argentina, or lose yourself in the pristine mountains of Columbia… South America is a place of nature, adventure, and culture, with its rainforests, rivers, mountains, Incan ruins, and pulsating music and nightlife. From the skyscrapers of New York to the tinsel and technology of California, from the broad plains of the Dakotas to ski resorts perched high in the Rockies…North America attracts travelers with its bustling cities, diverse cuisine, and vast landscapes.
+               </p>
+               <img src="amrica.png" alt="">
+            </td>
+
+            <td>
+               <img src="europ.png" alt="">
+               <h2>Flights to Europe</h2>
+               <p>
+                  Modern cities in love with art, relaxing beaches, and breathtaking scenery - Europe is a treasure trove of diversity, from Norway to Greece, and Spain to Ukraine. Scores of countries with unique cultures offer all kinds of adventures.
+               </p>
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+               <img src="australia.png" alt="">
+               <h2>Flights to Australia</h2>
+               <p>
+                  Beautiful, wild, with an easygoing culture, a visit to Australia and New Zealand is a must. From the unique aquatic life that teems in colorful coral reefs, harsh deserts and untamed bush, to cities alive with art and culture, and a love of sports and the outdoors, Australia and New Zealand are lands of fun and discovery.
+               </p>
+            </td>
+
+            <td id="midlo">
+               <h2>Flights to the Middle East</h2>
+               <p>
+                  From the world's oldest cities in the Fertile Crescent to new metropolises rising from the deserts of the Gulf, the Middle East offers history, culture, luxury shopping, innovative dining and novel experiences in abundance. More than 20 fascinating and exciting destinations - including Egypt, Iran, Jordan, Qatar, and the United Arab Emirates (UAE) - generously welcome travelers.
+               </p>
+               <img src="east.png" alt="">
+            </td>
+
+            <td>
+               <img src="asia.png" alt="">
+               <h2>Flights to Asia and the Far East</h2>
+               <p>
+                  Discover enchanting islands set in the midst of the turquoise sea, where gleaming white beaches beckon and deep blue waters delight the eye, or explore mysterious ancient temples perched high on mountaintops or hidden away in the green embrace of deep jungles…Get your ticket for a journey into the exotic: Thailand, the Maldives, Japan, the Philippines, India, China, Singapore and many more destinations offer experiences that will recharge you with positive energy and awaken a fresh sense of wonder.
+               </p>
+            </td>
+         </tr>
+
+      </table>
+   </div>
+
+   <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; margin-bottom: 30px; font-family: 'Jura', sans-serif;">
+
+      <div>
+         <img src="every.png" alt="">
+      </div>
+      <div style="margin-left: 40px;">
+         <h2>We are thinking about every step of your travel</h2>
+         <span style="display: inline-block; max-width: 500px;">
+            We are thinking every step of your travel for you. To let you enjoy a comfortable travel, we provide options complementing your travel plan such as seat selection, car rental and hotel reservation. You also get the opportunity to earn extra Miles for each expense you make via our website and mobile application.
+         </span>
+      </div>
+
+
+   </div>
+
+       <div style="background-color: #006192; text-align: center; padding-top: 20px; padding-bottom: 20px;">
+         <div style="margin: 0px auto ; padding: 20px; width: 1150px;">  
+      <div style="text-align: left; vertical-align: center; background-color:#004c72; border-radius: 3px 50% 3px 3px; padding: 10px;">         
+              <div style="display: inline-block; padding-left:20px ; width: 200px; text-align: left; position: relative; bottom: 58px; ">
+                  
+                  <span style="color: #d2d7d3; font-weight: bold; font-family: 'Merriweather Sans', sans-serif; font-size: 16px; "> WEBSITE</span>
+                   <ul class="txt" style="list-style: none; padding: 0px; ">
+                       <li><a style="text-decoration: none; color: silver;  " href="">Accessibility</a></li>
+                       <li><a style="text-decoration: none; color: silver;" href="">Sitemap</a></li>
+                   </ul>
+              </div>
+              <div style="display: inline-block; padding-left:20px ; width: 200px;">
+                  <span style="color: #d2d7d3; font-weight: bold; font-family: 'Merriweather Sans', sans-serif; font-size: 16px;">GET IN TOUCH</span>
+                  <ul class="txt" style="list-style: none; padding: 0px; ">
+                      <li><a style="text-decoration: none; color: silver;" href="">Contact Airline</a></li>
+                      <li><a style="text-decoration: none; color: silver;" href="">Maps & Directions</a></li>
+                      <li><a style="text-decoration: none; color: silver;" href="">Jobs</a></li>
+                      <li><a style="text-decoration: none; color: silver;" href="">Social Media</a></li>
+                  </ul>
+             </div>
+              <div style="display: inline-block; padding-left:20px ; width: 200px;">
+                 <span style="color: #d2d7d3; font-weight: bold; font-family: 'Merriweather Sans', sans-serif; font-size: 16px;"> SECURITY & BRAND</span>
+                  <ul class="txt" style="list-style: none; padding: 0px; ">
+                      <li><a style="text-decoration: none; color: silver;" href="">Privacy Statement</a></li>
+                      <li style="width: 200px;"><a style="text-decoration: none; color: silver;" href="">Report Copyright Infringement</a></li>
+                      <li><a style="text-decoration: none; color: silver;" href="">Report Security Issue</a></li>
+                      <li><a style="text-decoration: none; color: silver;" href="">Trademark Notice</a></li>
+                  </ul>
+              </div>
+              <div class="communi"> 
+                  <img src="facebook.ico" alt=""> 
+                  <img src="twitter.ico" alt=""> 
+                  <img src="linkedin.ico" alt=""> 
+                  <img src="Instagram.ico" alt=""> 
+                  <img src="Youtube.ico" alt=""> 
+      
+                  <br><br>
+                  
+                  <a style="text-decoration: none; color: silver;" href="">Airline Apps</a>
+              </div>
+      
+              <div class="logo"> <img src="vb.png" alt=""> </div>
+       </div>
+      
+              <div class="copyright"> <span>&copy; 2020 The President and Fellows of  Airline</span> </div>
+          </div>
+           </div>
+      
+
+      <script src="main.js"></script>
+   </body>
+    
+
+</html>

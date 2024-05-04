@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up - page</title>
+    <link rel="stylesheet" href="sign up.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 style="margin-top: 15px;">Person Details</h1>
+    <div style="margin-bottom: 7px;">
+        <div style="user-select: none; margin-top: 10px;">
+            <div id="con1" style="display: inline-block;">
+                <div class="folto">
+                    <div class="out">
+                        <div class="in"></div>
+                    </div>
+                </div>
+        
+                <div class="folto2">
+                    <input type="radio" name="gender" id="mr" name="mr">  
+                    <label for="mr">Mr.</label>
+                </div>
+                <p style="clear: left;"></p>
+        
+            </div>
+        
+            <div id="con2" style="display: inline-block;">
+                <div class="folto">
+                    <div class="out">
+                        <div class="in"></div>
+                    </div>  
+                </div>
+        
+                <div class="folto2">
+                    <input type="radio" name="gender" id="ms" name="ms">  
+                    <label for="ms">Ms.</label>
+                </div>
+                <p style="clear: left;"></p>
+        
+            </div>
+        </div>
+
+    </div>
+    <div style="margin-bottom: 7px;">
+       <input type="text" class="same" name="first_name" placeholder="first name">
+       <input type="text" class="same" name="last_name" placeholder="last name">
+    </div>
+    <input type="text" class="same" id="birth" name="Date of birth" placeholder="Date of birth">
+
+    <script>
+       document.getElementById('birth').onclick = function(){
+        document.getElementById('birth').setAttribute('type', 'date')
+       }
+
+       document.getElementById('birth').onblur = function(){
+        document.getElementById('birth').setAttribute('type', 'text')
+       }
+    </script>
+
+    <h1>Security details</h1>
+    <input type="password" class="same" name="password up" placeholder="password">
+    <input type="password" class="same" name="comfirm password up" placeholder="comfirm password">
+
+    <h1>Contact details</h1>
+    <div style="margin-bottom: 7px;">
+       <input type="email" class="same" name="email" placeholder="E-mail">
+       <input type="tel" class="same" name="mobile number" placeholder="mobile number">
+    </div>
+    <div style="margin-bottom: 7px;">
+       <input type="text" class="same" name="country" placeholder="your country">
+       <input type="text" class="same" name="city" placeholder="your city">
+    </div>
+
+    <div style="margin: 40px auto; width: fit-content; margin-bottom: 0px;">
+        <button class="submit">Create your account</button>
+    </div>
+<script src="sign up.js"></script>
+</body>
+</html>

@@ -1,0 +1,782 @@
+html{
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(235, 235, 235);
+}
+
+.navi{
+    position: fixed; 
+    top:0; 
+    z-index: 10;
+    background-color: #006192;
+    width: 100%;
+    height: 60px;
+}
+
+.navi>div:nth-child(1){
+    font-size: 18px; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 600;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(1) img{
+    height: 60px; 
+    position: absolute; 
+    cursor: pointer;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(2) img{
+
+color: white; 
+position: absolute; 
+top:0px; 
+left: 450px; 
+background-color: #006192; 
+height: 60px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(3){
+    padding: 19.5px; 
+    width: 102px; 
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 480px; 
+    background-color: #ad0006;
+    min-width: max-content;
+
+}
+
+.navi>div:nth-child(1) div:nth-of-type(4){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 621px; 
+    background-color: #006192; 
+    height: 60px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(5){
+    padding: 19.5px; 
+    min-width: max-content;
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 651px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(6){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 834px;
+}
+
+.navi>div:nth-child(1) div:nth-of-type(7){
+    padding: 19.5px; 
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 864px;
+    min-width: max-content;
+
+}
+
+.navi>div:nth-child(1) div:nth-of-type(8){
+    color: white; 
+    position: absolute; 
+    top:0px; 
+    left: 975px;
+}
+
+
+.stuffing{
+    height: 60px; 
+    width: 100%;
+}
+
+.body{
+    margin: 15px auto;
+    padding-top: 5px;
+    width: 960px;
+}
+
+.copy_card{
+    font-size: 20px;
+    color: black;
+    height: 100px;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main{
+    width: 931px;
+    background-color: rgba(red, green, blue, alpha);
+    margin: 3px auto;
+
+}
+
+.bound{
+    padding: 5px 44px 7px 44px; 
+    color: white; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 900; 
+    background-color: #ad0006;
+}
+
+.big_label{
+    margin-top:15px; 
+    margin-bottom: 25px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size:28px;
+}
+
+.flight_list{
+    padding: 15px;
+    color: white; 
+    border: 2px solid #003F5E; 
+    border-top: 0; 
+    border-radius: 0 0 10px 10px;
+    min-height: 200px;
+    background-color: #003F5E;
+}
+
+.filter_bar{
+    height: 52px; 
+    padding: 0 15px; 
+    color: white; 
+    background-color: #0094DE; 
+    border-radius: 10px 10px 0 0;
+}
+
+.filter{
+    padding: 18px 10px 16px 0;
+     width: 73px; 
+     font-family: 'Ubuntu', sans-serif; 
+     font-size: 14.5px;
+}
+
+.card_standard{ 
+
+    font-size: 20px;
+    color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.flight_details{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: fit-content;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px;
+}
+
+
+.flight_details:hover{
+    box-shadow: 4px 4px 15px rgb(240, 240, 240);
+}
+
+.flight_details_c{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: fit-content;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px;
+    height: 88px;
+    border: 1px solid green;
+}
+
+.text1, .text2{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.text1{
+    color: #697886;
+    font-size: 14px;
+}
+
+.text2{
+    color: #697886;
+    font-size: 12px;
+}
+
+.info1, .info2, .info3{
+    margin: 0 10px;
+}
+
+.info1{
+    max-height: fit-content;
+
+}
+.info1 div{
+    max-height: fit-content;
+
+}
+
+.info1, .info2, .info3, .d1{
+    text-align: center;
+    padding: 5px;
+    user-select: none;
+    display: inline-block;
+    
+}
+
+.div1{
+    font-size: 16px;
+    color: #232b38;
+    font-weight: 700;
+}
+
+.div2{
+    font-size: 14px;
+    color: #697886;
+    font-weight: 500;
+}
+
+.div3{
+    font-size: 12px;
+    color: #697886;
+    font-weight: 500;
+
+}
+
+.div0{
+    font-size: 10px;
+    color: #697886;
+    font-weight: 500;
+}
+
+
+.div4{
+    color: #232b38;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.div5{
+    font-size: 12px;
+    color: #697886;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.diffirent{
+    font-size: 12px;
+    color: #697886;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.economy, .business{
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 15px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 78px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    min-width: 180px;
+}
+
+.economy:hover, .business:hover{
+    box-shadow: 4px 4px 15px rgb(240, 240, 240);
+}
+
+.Details{
+    margin: 10px auto;
+}
+
+table{
+
+    color: black;
+    width: 898px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    background-color: white;
+
+}
+
+th{
+    text-align: left;
+    padding: 8px 14px ;
+    color: white;
+    background-color: #27546b;
+    border: 1px solid #556770;
+}
+
+tbody{
+    margin-top: 1px;
+
+}
+
+td{
+    padding: 10px 13px;
+    padding-right: 3px;
+    border: 1px solid #ddd;
+}
+
+td:nth-child(1) div{
+    display: inline-block;
+}
+
+.air_logo{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.DA{
+    border-left: 1px solid #ddd;
+    padding: 2px 5px;
+    max-width: fit-content;
+}
+
+.B_selected, .E_selected{
+    display: none;
+}
+
+.d1{
+    position: relative;
+}
+
+.b1{
+    line-height: 15px;
+}
+
+.b2{
+    font-size:13px; 
+    position: absolute; 
+    top: 0;
+}
+
+.change_f{
+    font-size: 17px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    margin-top: 45px;
+    background-color: darkred;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+}
+
+.change_f:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid darkred;
+    padding: 9px 14px;
+    color: darkred;
+
+}
+
+.change_f:active{
+    background-color: rgba(92, 83, 83, 0.2);
+    
+}
+
+
+.parent{
+    max-width: 1138px;
+    margin: 25px auto 30px auto;
+}
+
+.continue{
+    float: right;
+    position: relative;
+    min-width: 325px;
+    padding: 24px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px; 
+}
+
+
+.price{
+    float: right;
+    font-weight: bold;
+}
+
+.con_but{
+    margin: 30px auto 5px auto;
+    padding: 12px;
+    width: 100%;
+    background-color: #006192;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+}
+
+.con_but:hover{
+    background-color: rgb(1, 69, 100);
+}
+
+.con_but:active{
+    color: #006192;
+    background-color: white;
+    border: 1px solid #006192;
+}
+
+.trip_details{
+    margin-right: 16px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    padding: 24px 24px 10px 24px;
+}
+
+.side1, .side2{
+    float: right;
+    padding-top: 6px;
+}
+
+.side1{
+    text-align: right;
+}
+
+.sprat{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.big_label2{
+    margin-top:15px; 
+    margin-bottom: 30px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size:23px;
+}
+
+.ball{
+    border: 1px solid #006192; 
+    border-radius: 100%; 
+    min-width: 16px; 
+    min-height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.coco{
+    display: flex;
+    align-items: center;
+}
+
+.coco span{
+    color: #006192;
+}
+
+.time{
+    min-width: 55px;
+    display: inline-block;
+    position: absolute;
+    top: 113px;
+    left: -20px;
+    margin-top: 0px;
+    transform: rotate(90deg);
+}
+
+.time2{
+    min-width: 55px;
+    display: inline-block;
+    position: absolute;
+    top: 52px;
+    left: -20px;
+    margin-top: 0px;
+    transform: rotate(90deg);
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.content1{
+   position: relative;
+}
+
+.coordinates_D{
+    margin: 8px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-left: 1px solid #ddd;
+}
+
+.coordinates_A{
+    margin: 8px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.coordinates_G{
+    margin: 8px;
+    margin-top: 0px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    padding-top: 0px;
+}
+
+.line1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.txt_l{
+    position: relative;
+    top: 9px;
+    background-color:white;
+    padding: 0px 15px;
+}
+
+.line{
+    border-top:1px solid #ddd;
+    min-height: 10px;
+}
+
+.divadd{
+    text-align: center; 
+    border-left: 2px solid #ddd;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.spanadd{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/****************************************************************************************/
+/*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*/
+/*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*/
+/*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*IN*/
+/****************************************************************************************/
+
+.body_in{
+    margin: 15px auto;
+    padding-top: 5px;
+    width: 960px;
+}
+
+.bound_in{
+    padding: 5px 44px 7px 44px; 
+    color: white; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 900; 
+    background-color: #1100ad;
+}
+
+.big_label_in{
+    margin-top:15px; 
+    margin-bottom: 50px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size:28px;
+}
+
+.main_in{
+    width: 931px;
+    background-color: rgba(red, green, blue, alpha);
+    margin: 3px auto;
+
+}
+
+.filter_bar_in{
+    height: 52px; 
+    padding: 0 15px; 
+    color: white; 
+    background-color: #0094DE; 
+    border-radius: 10px 10px 0 0;
+}
+
+.filter_in{
+    padding: 18px 10px 16px 0;
+     width: 73px; 
+     font-family: 'Ubuntu', sans-serif; 
+     font-size: 14.5px;
+}
+
+.flight_list_in{
+    padding: 15px;
+    color: white; 
+    border: 2px solid #003F5E; 
+    border-top: 0; 
+    border-radius: 0 0 10px 10px;
+    min-height: 200px;
+    background-color: #003F5E;
+}
+
+.card_standard_in{ 
+    font-size: 20px;
+    color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.flight_details_in{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: fit-content;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px;
+}
+
+
+.flight_details_in:hover{
+    box-shadow: 4px 4px 15px rgb(240, 240, 240);
+}
+
+.info1_in, .info2_in, .info3_in, .d1_in{
+    text-align: center;
+    padding: 5px;
+    user-select: none;
+    display: inline-block;
+}
+
+.info1_in, .info2_in, .info3_in{
+    margin: 0 10px;
+}
+
+.info1_in{
+    max-height: fit-content;
+
+}
+.info1_in div{
+    max-height: fit-content;
+
+}
+
+.div1_in{
+    font-size: 16px;
+    color: #232b38;
+    font-weight: 700;
+}
+
+.div2_in{
+    font-size: 14px;
+    color: #697886;
+    font-weight: 500;
+}
+
+.div3_in{
+    font-size: 12px;
+    color: #697886;
+    font-weight: 500;
+
+}
+
+.text1_in, .text2_in{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.text1_in{
+    color: #697886;
+    font-size: 14px;
+}
+
+.text2_in{
+    color: #697886;
+    font-size: 12px;
+}
+
+.div0_in{
+    font-size: 10px;
+    color: #697886;
+    font-weight: 500;
+}
+
+.div5_in{
+    font-size: 12px;
+    color: #697886;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.economy_in, .business_in{
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 15px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 78px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    min-width: 180px;
+}
+
+.economy_in:hover, .business_in:hover{
+    box-shadow: 4px 4px 15px rgb(240, 240, 240);
+}
+
+.Details_in{
+    margin: 10px auto;
+}
+
+.air_logo_in{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.inbound{
+    display: none;
+}
+
+th{
+    font-family: 'Roboto';
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+td{
+    font-family: monospace;
+    font-size: 16px;
+}
